@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <h2 id="logo"><a href="./index.html"><img src="./img/logo.png" alt="DTD Logo" width="100px"/>Dave's Travel Deals!</a></h2>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <p>Please enter your details below to create your account.</p>
+    <form action="davestraveldeals.com/registration" method="post">
+        <fieldset>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <br>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <img src="./img/captcha.png" alt="captcha" width="200">
+            <br>
+            <br>
+            <label for="captcha">Captcha: </label>
+            <input type="text" name="captcha" id="captcha">
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <footer>
+        <p>© 2024 Dave's Travel Deals</p>
+    </footer>
+</body>
+</html>
