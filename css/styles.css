@@ -3,6 +3,16 @@
     margin: auto;
     margin-bottom: 5px;
 }
-body{
-    padding-top: 86px;
+@media screen and (min-width: 769px) {
+    body{
+        padding: 86px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        padding-top: 171px;
+    }
+}
+#hero-img{
+    border-radius: 10px;
 }
