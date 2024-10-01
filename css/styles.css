@@ -11,3 +11,27 @@
 .text-shadow-1 {
     text-shadow: 2px 2px 10px black;
 }
+#first-description {
+    display: none;
+}
+#last-description {
+    display: none;
+}
+#email-description {
+    display: none;
+}
+#phone-description {
+    display: none;
+}
+#password-description {
+    display: none;
+}
+#address-description {
+    display: none;
+}
+#city-description {
+    display: none;
+}
+#postal-description {
+    display: none;
+}

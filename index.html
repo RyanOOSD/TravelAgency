@@ -158,10 +158,9 @@
   <!-- Bootstrap Cards -->
   <div class="container px-4 py-5" id="custom-cards">
     <h2 class="pb-2 border-bottom">Featured Destinations</h2>
-  
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/willemstad.jpg');">
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-0">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Willemstad</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -171,10 +170,10 @@
             </ul>
           </div>
         </div>
+        <p id="card-0-desc"></p>
       </div>
-  
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/london.jpg');">
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-1">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">London</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -184,10 +183,10 @@
             </ul>
           </div>
         </div>
+        <p id="card-1-desc"></p>
       </div>
-  
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/tahiti.jpg');">
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-2">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tahiti</h3>
             <ul class="d-flex list-unstyled mt-auto">
@@ -197,6 +196,46 @@
             </ul>
           </div>
         </div>
+        <p id="card-2-desc"></p>
+      </div>
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-3">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cancún</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <small>Mexico</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p id="card-3-desc"></p>
+      </div>
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-4">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Easter Island</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <small>Chile</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p id="card-4-desc"></p>
+      </div>
+      <div class="col pb-5">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-5">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Stockholm</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <small>Sweden</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p id="card-5-desc"></p>
       </div>
     </div>
   </div>
@@ -244,7 +283,7 @@
             <p>Stay informed about the latest travel news and trending destinations.</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <input id="newsletter" type="text" class="form-control" placeholder="Email address">
               <button class="btn btn-primary" type="button">Subscribe</button>
             </div>
           </form>
@@ -270,6 +309,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/mainscript.js"></script>
 </body>
 </html>
