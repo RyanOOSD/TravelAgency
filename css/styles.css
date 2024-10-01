@@ -1,6 +1,6 @@
 @media screen and (min-width: 769px) {
     body{
-        padding: 86px;
+        padding-top: 86px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -10,4 +10,13 @@
 }
 .text-shadow-1 {
     text-shadow: 2px 2px 10px black;
+}
+.spacer{
+    padding-top: 100px;
+}
+.spacer-half {
+    padding-top: 50px;
+}
+.staff-img{
+    border-radius: 25px;
 }
