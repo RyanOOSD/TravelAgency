@@ -75,7 +75,7 @@
 
   <!-- Bootstrap Form -->
   <main class="container form-register w-100 mt-5">
-    <form class="row g-2 needs-validation" >
+    <form class="row g-0 needs-validation">
       <h1 class="h3 mb-3 fw-normal mt-5">Account Registration</h1>
       <div class="form-floating col-md-6">
         <input type="text" class="form-control" id="floatingFirstName" placeholder="John">
@@ -103,7 +103,7 @@
       </div>
       <div class="form-floating col-md-6">
         <select class="form-control form-select" id="floatingProv">
-          <option value="" disabled selected hidden></option>
+          <option value="" disabled selected hidden>Province / Territory</option>
           <option value="AB">Alberta</option>
           <option value="BC">British Columbia</option>
           <option value="MB">Manitoba</option>
@@ -132,12 +132,11 @@
         </label>
       </div>
       <div class="d-grid gap-2 col-6 d-md-block">
-        <button class="btn btn-primary py-2" type="submit" id="submit-btn">Register</button>
-        <button class="btn btn-secondary py-2" type="reset" id="reset-btn">Reset</button>
+        <button class="btn btn-primary py-2 form-btns" type="button" id="submit-btn">Register</button>
+        <button class="btn btn-secondary py-2 form-btns" type="button" id="reset-btn">Reset</button>
       </div>
     </form>
-    <br>
-    <p>Already have an account? <a href="./login.html">Login here.</a></p>
+    <p class="pt-3">Already have an account? <a href="./login.html">Login here.</a></p>
   </main>
 
   <!-- Bootstrap Footer -->
