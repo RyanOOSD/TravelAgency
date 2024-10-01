@@ -73,16 +73,15 @@
     </div>
   </header>
 
-  <div class="spacer"></div>
   <!-- Bootstrap Form -->
-  <main class="form-register w-100 m-auto">
-    <form>
-      <h1 class="h3 mb-3 fw-normal">Account Registration</h1>
-      <div class="form-floating">
+  <main class="container form-register w-100 mt-5">
+    <form class="row g-2 needs-validation" >
+      <h1 class="h3 mb-3 fw-normal mt-5">Account Registration</h1>
+      <div class="form-floating col-md-6">
         <input type="text" class="form-control" id="floatingFirstName" placeholder="John">
         <label for="floatingFirstName">First Name</label>
       </div>
-      <div class="form-floating">
+      <div class="form-floating col-md-6">
         <input type="text" class="form-control" id="floatingLastName" placeholder="Doe">
         <label for="floatingLastName">Last Name</label>
       </div>
@@ -94,29 +93,48 @@
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
-      <div class="form-floating">
+      <div class="form-floating col-md-6">
+        <input type="text" class="form-control" id="floatingAddress" placeholder="Address">
+        <label for="floatingAddress">Address</label>
+      </div>
+      <div class="form-floating col-md-6">
         <input type="text" class="form-control" id="floatingCity" placeholder="City">
         <label for="floatingCity">City</label>
       </div>
-      <div class="form-floating">
+      <div class="form-floating col-md-6">
         <select class="form-control form-select" id="floatingProv">
           <option value="" disabled selected hidden></option>
           <option value="AB">Alberta</option>
+          <option value="BC">British Columbia</option>
+          <option value="MB">Manitoba</option>
+          <option value="NB">New Brunswick</option>
+          <option value="NL">Newfoundland and Labrador</option>
+          <option value="NT">Northwest Territories</option>
+          <option value="NS">Nova Scotia</option>
+          <option value="NU">Nunavut</option>
+          <option value="ON">Ontario</option>
+          <option value="PE">Prince Edward Island</option>
+          <option value="QC">Quebec</option>
+          <option value="SK">Saskatchewan</option>
+          <option value="YT">Yukon</option>
         </select>
-        <label for="floatingProv">Province</label>
+        <label for="floatingProv">Province / Territory</label>
       </div>
-      <div class="form-floating">
+      <div class="form-floating col-md-6">
         <input type="text" class="form-control" id="floatingInput" placeholder="T2C 5P6">
         <label for="floatingInput">Postal Code</label>
       </div>
-  
+
       <div class="form-check text-start my-3">
         <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
         <label class="form-check-label" for="flexCheckDefault">
           Remember me
         </label>
       </div>
-      <button class="btn btn-primary w-100 py-2" type="submit" id="submit-btn">Register</button>
+      <div class="d-grid gap-2 col-6 d-md-block">
+        <button class="btn btn-primary py-2" type="submit" id="submit-btn">Register</button>
+        <button class="btn btn-secondary py-2" type="reset" id="reset-btn">Reset</button>
+      </div>
     </form>
     <br>
     <p>Already have an account? <a href="./login.html">Login here.</a></p>

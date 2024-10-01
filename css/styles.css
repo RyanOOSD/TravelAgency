@@ -11,12 +11,3 @@
 .text-shadow-1 {
     text-shadow: 2px 2px 10px black;
 }
-.spacer{
-    padding-top: 100px;
-}
-.spacer-half {
-    padding-top: 50px;
-}
-.staff-img{
-    border-radius: 25px;
-}

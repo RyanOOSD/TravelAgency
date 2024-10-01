@@ -1,2 +1,3 @@
 // Adding an event handler to the "Register" button
-document.getElementById("")
+document.querySelector("#submit-btn")
+    .addEventListener
