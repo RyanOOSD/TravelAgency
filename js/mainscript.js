@@ -41,18 +41,18 @@ for (let i = 0; i < imgPath.length; i++) {
     let path = imgPath[i];
     let desc = imgDesc[i];
     let link = imgLinks[i];
-    // Declare function to be called later for automatic page redirect
+    // Declare parent window redirect function to be called later for popup redirects
     function redirectPage() {
         window.open(`${link}`, "_parent");
     }
 
     // Modifies each element on the main page with a "card-i" ID
-    // sets the image path to the value stored in the imgPath array
+    // Sets the image path to the value stored in the imgPath array
     document.getElementById("card-" + i)
         .setAttribute("style", `background-image: url(${path})`);
 
     // Add mouseover listeners for each image to display the description
-    // Inserts the description into the corresponding p tag for each image
+    // Inserts the description into the corresponding div tag for each image description
     // When moused over from the value stored in the imgDesc array
     document.querySelector("#card-" + i)
         .addEventListener("mouseover", function() {
