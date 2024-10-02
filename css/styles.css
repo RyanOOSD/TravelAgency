@@ -1,3 +1,12 @@
+/* 
+Author: Ryan Angaangan
+Student ID: 000783037
+Date: October 1, 2024
+Course: CPRG 210 - Web Application Development
+Assignment: HTML, CSS, JavaScript
+*/
+
+/* Changes amount of top padding dependiing on the size of the viewport  */
 @media screen and (min-width: 769px) {
     body{
         padding-top: 86px;
@@ -8,9 +17,13 @@
         padding-top: 171px;
     }
 }
+
+/* Increase the size of the shadow on card text */
 .text-shadow-1 {
     text-shadow: 2px 2px 10px black;
 }
+
+/* By default, hide form descriptions when page is loaded */
 #first-description {
     display: none;
 }
