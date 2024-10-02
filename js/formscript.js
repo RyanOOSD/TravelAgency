@@ -18,7 +18,7 @@ document.querySelector("#submit-btn")
         } 
         else {
             // Returns false if the user clicks "Cancel"
-        alert("Submit cancelled.")
+        alert("Submit cancelled.");
         }
 });
 

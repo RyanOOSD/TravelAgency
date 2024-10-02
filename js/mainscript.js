@@ -13,7 +13,7 @@ const imgPath = [
     "./img/tahiti.jpg",
     "./img/cancun.jpg",
     "./img/easter.jpg",
-    "./img/stockholm.jpg",
+    "./img/stockholm.jpg"
 ];
 
 // Create array with image descriptions
@@ -41,30 +41,53 @@ for (let i = 0; i < imgPath.length; i++) {
     let path = imgPath[i];
     let desc = imgDesc[i];
     let link = imgLinks[i];
+    // Declare function to be called later for automatic page redirect
+    function redirectPage() {
+        window.open(`${link}`, "_parent");
+    }
+
     // Modifies each element on the main page with a "card-i" ID
     // sets the image path to the value stored in the imgPath array
     document.getElementById("card-" + i)
         .setAttribute("style", `background-image: url(${path})`);
+
     // Add mouseover listeners for each image to display the description
-    // Inserts the description into the corresponding p tag
-    // For each image when moused over froom the value stored in the imgDesc array
+    // Inserts the description into the corresponding p tag for each image
+    // When moused over from the value stored in the imgDesc array
     document.querySelector("#card-" + i)
         .addEventListener("mouseover", function() {
-            document.getElementById("card-"+ i + "-desc").innerHTML=`${desc}`;
+            document.getElementById(`card-${i}-desc`).innerHTML=`${desc}`;
     });
+
     // Add an onclick listener for each image
     document.querySelector("#card-" + i)
         .addEventListener("click", function() {
-            //When clicked a popup will be opened
+
+            //When the image is clicked a popup window will be opened with a timer of 5 seconds
             let popup = window.open("popup.html", "", "height=350, width=350");
-            popup.document.open;
-            popup.document.write("<h1>You will be redirected in 5 seconds.</h1>\n<br>");
-            popup.document.write("<a href=" + `${link}` + ">Click here to go to the new page now.</a>\n<br>\n<br>");
-            popup.document.write("<button id='cancel-link' type=button>Cancel</button>");
             popup.setTimeout("window.close()", 5000);
-            setTimeout(function() {
-            window.location.href = `${link}`;
-            }, 5000);
+            let mainTimer = setTimeout(redirectPage, 5000);
+            // Waits for the popup window to be fully loaded so elements can be selected modified
+            popup.onload = function() {
+                let redirLink = this.document.getElementById("pop-link");
+                let cancelRedir = this.document.getElementById("cancel-button"); 
+                redirLink.setAttribute("href", `${link}`);
+
+                // I tried getting the link to open in the parent window of the popup using the target attribute
+                // But I couldn't get it to work
+                // redirLink.setAttribute("target", "_parent");
+                // Using an event listener to open the page in the main windowm, close the popup and clear the automatic redirect timer
+                redirLink.addEventListener("click", function() {
+                    redirectPage();
+                    popup.close();
+                    clearTimeout(mainTimer);
+                });
+
+                // Click event listener lets the user clear the 5 second timer to stop the automatic redirect
+                cancelRedir.addEventListener("click", function() {
+                    clearTimeout(mainTimer);
+                });
+            }
     });
 };
 
